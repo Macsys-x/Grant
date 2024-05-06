@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700" maxWidth="1000" minHeight="700" minWidth="1000" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerScienRating">
+    <children>
+        <AnchorPane layoutY="71.0" prefHeight="631.0" prefWidth="1000.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label layoutX="357.0" layoutY="5.0" prefHeight="48.0" prefWidth="286.0" text="Баллы научного рейтинга" textAlignment="CENTER">
+                    <font>
+                        <Font name="Lobster Regular" size="25.0" />
+                    </font>
+                </Label>
+            <Label layoutX="40.0" layoutY="53.0" prefHeight="18.0" prefWidth="247.0" text="Конкурсы студенческих научных работ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="77.0" text="Международный, всероссийский уровень:" />
+            <CheckBox fx:id="InternationalWin" layoutX="40.0" layoutY="101.0" mnemonicParsing="false" text="Победитель или призер" />
+            <CheckBox fx:id="InternationalPartic" layoutX="40.0" layoutY="129.0" mnemonicParsing="false" text="Участник" />
+            <Label layoutX="40.0" layoutY="157.0" text="Региональный, межвузовский уровень:" />
+            <CheckBox fx:id="RegionWin" layoutX="40.0" layoutY="182.0" mnemonicParsing="false" text="Победитель или призер" />
+            <CheckBox fx:id="RegionPartic" layoutX="39.0" layoutY="209.0" mnemonicParsing="false" text="Участник" />
+            <Label layoutX="40.0" layoutY="240.0" prefHeight="18.0" prefWidth="155.0" text="Внутривузовский уровень:" />
+            <CheckBox fx:id="InsideVuzWin" layoutX="40.0" layoutY="265.0" mnemonicParsing="false" text="Победитель или призер" />
+            <CheckBox fx:id="InsideVuzPartic" layoutX="40.0" layoutY="293.0" mnemonicParsing="false" text="Участник" />
+            <Label layoutX="40.0" layoutY="321.0" prefHeight="18.0" prefWidth="367.0" text="Очные выступления на научных конференциях и выставках">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="344.0" prefHeight="18.0" prefWidth="447.0" text="Участие с докладом в международной конференции, проводимой за рубежом:" />
+            <Label layoutX="40.0" layoutY="400.0" prefHeight="18.0" prefWidth="406.0" text="Участие с докладом в международной конференции, проводимой в РФ:" />
+            <Label layoutX="40.0" layoutY="453.0" prefHeight="18.0" prefWidth="406.0" text="Участие с докладом во всероссийской/региональной конференции:" />
+            <Label layoutX="40.0" layoutY="505.0" prefHeight="18.0" prefWidth="462.0" text="Участие с докладом в факультетской/кафедральной конференции в Университете:" />
+            <CheckBox fx:id="ParticRubezhPartic" layoutX="33.0" layoutY="371.0" mnemonicParsing="false" text="Участие" />
+            <CheckBox fx:id="ParticRubezhPrize" layoutX="179.0" layoutY="371.0" mnemonicParsing="false" text="Призовое место" />
+            <CheckBox fx:id="ParticRFPartic" layoutX="33.0" layoutY="425.0" mnemonicParsing="false" text="Участие" />
+            <CheckBox fx:id="ParticRFPrize" layoutX="179.0" layoutY="425.0" mnemonicParsing="false" text="Призовое место" />
+            <CheckBox fx:id="ParticRegionPartic" layoutX="33.0" layoutY="477.0" mnemonicParsing="false" text="Участие" />
+            <CheckBox fx:id="ParticRegionPrize" layoutX="179.0" layoutY="477.0" mnemonicParsing="false" text="Призовое место" />
+            <CheckBox fx:id="ParticKafedraPartic" layoutX="34.0" layoutY="531.0" mnemonicParsing="false" text="Участие" />
+            <CheckBox fx:id="ParticKafedraPrize" layoutX="179.0" layoutY="531.0" mnemonicParsing="false" text="Призовое место" />
+            <CheckBox fx:id="ParticWithStandInKonferenc" layoutX="34.0" layoutY="572.0" mnemonicParsing="false" text="Участие со стендовым докладом на конференции/выставке" />
+            <Label layoutX="577.0" layoutY="53.0" prefHeight="18.0" prefWidth="334.0" text="Участие в выполнении НИР кафедры/научного кружка">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="ResearchWork" layoutX="577.0" layoutY="78.0" mnemonicParsing="false" text="Исследовательская работа" />
+            <CheckBox fx:id="CollectInformation" layoutX="577.0" layoutY="105.0" mnemonicParsing="false" text="Сбор информации" />
+            <CheckBox fx:id="WorkInScientificCircles" layoutX="577.0" layoutY="132.0" mnemonicParsing="false" text="Работа в научных кружках" />
+            <Label layoutX="576.0" layoutY="156.0" prefHeight="18.0" prefWidth="126.0" text="Публикация статей">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="PublicationInScopusWos" layoutX="577.0" layoutY="181.0" mnemonicParsing="false" text="Публикации в издании Scopus/Wos" />
+            <CheckBox fx:id="PublicationInBAK" layoutX="577.0" layoutY="207.0" mnemonicParsing="false" text="Публикация в издании ВАК" />
+            <CheckBox fx:id="PublicationInRinc" layoutX="577.0" layoutY="233.0" mnemonicParsing="false" text="Публикации в издании РИНЦ, кроме входящих в перечень ВАК" />
+            <CheckBox fx:id="PublicationInOther" layoutX="577.0" layoutY="260.0" mnemonicParsing="false" text="Публикация в прочих изданиях" />
+            <Label layoutX="577.0" layoutY="288.0" prefHeight="18.0" prefWidth="406.0" text="Получение патента/свидетельство о государственной регистрации">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="AvtorIzobret" layoutX="577.0" layoutY="313.0" mnemonicParsing="false" text="Автор изобретения, полезной модели" />
+            <CheckBox fx:id="AvtorOfProgramm" layoutX="577.0" layoutY="340.0" mnemonicParsing="false" text="Автор программы для ЭВМ или базы данных" />
+            <Label fx:id="ColBallsOfScienRating" layoutX="579.0" layoutY="391.0" text="Количество баллов научного рейтинга" />
+            <Button fx:id="ButtonCalc" layoutX="706.0" layoutY="449.0" mnemonicParsing="false" text="Рассчитать" />
+            <Button fx:id="ButtonNext" layoutX="914.0" layoutY="573.0" mnemonicParsing="false" text="Далее" />
+            </children></AnchorPane>
+        <Label layoutX="329.0" layoutY="16.0" prefHeight="48.0" prefWidth="342.0" text="Дорожная карта студента" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Lobster Regular" size="28.0" />
+            </font>
+        </Label>
+      <Button fx:id="ButtonBack" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>

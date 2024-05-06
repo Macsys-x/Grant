@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700" maxWidth="1000" minHeight="700" minWidth="1000" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller2Kurs">
+    <children>
+        <AnchorPane layoutY="71.0" prefHeight="634.0" prefWidth="1000.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <MenuButton fx:id="Select2k" layoutX="27.0" layoutY="86.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="430.0" style="-fx-background-color: #fafafa;" text="2 курс" textAlignment="RIGHT">
+                    <items>
+                        <MenuItem fx:id="Filosofia2k1s" mnemonicParsing="false" text="Философия" />
+                        <MenuItem fx:id="English2k1s" mnemonicParsing="false" text="Иностранный язык 1-ый семестр" />
+                        <MenuItem fx:id="English2k2s" mnemonicParsing="false" text="Иностранный язык 2-ой семестр" />
+                        <MenuItem fx:id="VicheslitSystems2k1s" mnemonicParsing="false" text="Вычислительные системы, сети и телекоммуникации" />
+                        <MenuItem fx:id="ArhitekturaPredpiat2k2s" mnemonicParsing="false" text="Архитектура предприятий" />
+                        <MenuItem fx:id="EkonomFirms2k2s" mnemonicParsing="false" text="Экономика фирмы" />
+                        <MenuItem fx:id="TVandMS2k1s" mnemonicParsing="false" text="Теория вероятностей и математическая статистика" />
+                        <MenuItem fx:id="OperationSystem2k1s" mnemonicParsing="false" text="Операционные системы" />
+                        <MenuItem fx:id="InformTechnolAndSystemIn2k2s" mnemonicParsing="false" text="Информационные технологии и системы в сфере цифровой экономики" />
+                        <MenuItem fx:id="WebProgram2k1s" mnemonicParsing="false" text="Интернет-программирование" />
+                        <MenuItem fx:id="UpravlenieInfSystem2k2s" mnemonicParsing="false" text="Управленеи информационными системами" />
+                        <MenuItem fx:id="ProgrammApp2k2s" mnemonicParsing="false" text="Программирование приложений" />
+                        <MenuItem fx:id="InfMenegment2k2s" mnemonicParsing="false" text="Информационный менеджмент" />
+                        <MenuItem fx:id="ElDisPoFizreISport2k1s" mnemonicParsing="false" text="Элективные дисциплине по физической культуре и спорту 1-ый семестр" />
+                        <MenuItem fx:id="ElDisPoFizreISport2k2s" mnemonicParsing="false" text="Элективные дисциплине по физической культуре и спорту 2-ой семестр" />
+                        <MenuItem fx:id="IsledOperAndMetodOptimiz2k2s" mnemonicParsing="false" text="Исследование операций и методы оптимизации" />
+                        <MenuItem fx:id="MatAndImitModelir2k2s" mnemonicParsing="false" text="Математическое и имитационное моделирование" />
+                        <MenuItem fx:id="DateBase2k1s" mnemonicParsing="false" text="Базы данных 1-ый семестр" />
+                        <MenuItem fx:id="DateBase2k2s" mnemonicParsing="false" text="Базы данных 2-ой семестр" />
+                        <MenuItem fx:id="ProektInfSystem2k1s" mnemonicParsing="false" text="Проектирование информационных систем 1-ый семестр" />
+                        <MenuItem fx:id="ProektInfSystem2k2s" mnemonicParsing="false" text="Проектирование ифнормационных систем 2-ой семестр" />
+                        <MenuItem fx:id="OrgDobrDeiatAndVzaim2k2s" mnemonicParsing="false" text="Организация добровольческой (волонтерской) деятельности и взаимодействие с социально-ориентированными НКО" />
+
+                    </items>
+                </MenuButton>
+                <Label layoutX="285.0" layoutY="14.0" prefHeight="48.0" prefWidth="430.0" text="Калькулятор баллов по дисциплинам" textAlignment="CENTER">
+                    <font>
+                        <Font name="Lobster Regular" size="25.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="ColLesBe2kk" layoutX="35.0" layoutY="186.0" prefHeight="28.0" prefWidth="284.0" promptText="Введите количество посещенных занятий" style="-fx-background-color: #fafafa;">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <Label fx:id="ColBALL2kk" layoutX="35.0" layoutY="248.0" prefHeight="38.0" prefWidth="494.0" text="Количество баллов за посещение" />
+                <Label fx:id="BallOneLes2kk" layoutX="35.0" layoutY="323.0" prefHeight="28.0" prefWidth="342.0" text="Количество баллов за посещение одного занятия" />
+                <Label layoutX="539.0" layoutY="173.0" prefHeight="26.0" prefWidth="391.0" text="Сколько ещё минимум баллов нужно для получения оценки" />
+                <Label layoutX="538.0" layoutY="221.0" prefHeight="26.0" prefWidth="34.0" text="&quot;3&quot; —" />
+                <Label fx:id="MARK3" layoutX="573.0" layoutY="221.0" prefHeight="26.0" prefWidth="278.0" text="? баллов" />
+                <Label layoutX="537.0" layoutY="259.0" prefHeight="26.0" prefWidth="34.0" text="&quot;4&quot; —" />
+                <Label layoutX="538.0" layoutY="302.0" prefHeight="26.0" prefWidth="33.0" text="&quot;5&quot; —" />
+                <Label fx:id="MARK4" layoutX="573.0" layoutY="259.0" prefHeight="26.0" prefWidth="278.0" text="? баллов" />
+                <Label fx:id="MARK5" layoutX="573.0" layoutY="302.0" prefHeight="26.0" prefWidth="278.0" text="? баллов" />
+                <Button fx:id="ButtonCalculate" layoutX="677.0" layoutY="373.0" mnemonicParsing="false" text="Рассчитать" />
+                <TextField fx:id="BallsOfCreativeRating" layoutX="35.0" layoutY="397.0" prefHeight="28.0" prefWidth="444.0" promptText="Введите количество баллов за творческий подход к учебной работе" style="-fx-background-color: #fafafa;">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <TextField fx:id="BallsOfControll" layoutX="37.0" layoutY="477.0" prefHeight="28.0" prefWidth="410.0" promptText="Введите количество баллов за текущий и рубежный контроль" style="-fx-background-color: #fafafa;">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </TextField>
+                <Label fx:id="ErrorCreative" layoutX="35.0" layoutY="543.0" prefHeight="28.0" prefWidth="722.0" />
+                <Label fx:id="ErrorControll" layoutX="35.0" layoutY="571.0" prefHeight="28.0" prefWidth="722.0" />
+                <Label fx:id="AllColOfBall" layoutX="538.0" layoutY="124.0" prefHeight="20.0" prefWidth="214.0" text="Общее количество баллов: " />
+                <Button fx:id="ButtonNext" layoutX="904.0" layoutY="573.0" mnemonicParsing="false" text="Далее" />
+            </children></AnchorPane>
+        <Label layoutX="329.0" layoutY="16.0" prefHeight="48.0" prefWidth="342.0" text="Дорожная карта студента" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Lobster Regular" size="28.0" />
+            </font>
+        </Label>
+        <Button fx:id="ButtonBackMenu2k" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>

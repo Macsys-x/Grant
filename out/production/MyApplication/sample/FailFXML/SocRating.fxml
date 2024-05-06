@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700" maxWidth="1000" minHeight="700" minWidth="1000" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerSocRating">
+    <children>
+        <AnchorPane layoutY="71.0" prefHeight="631.0" prefWidth="1000.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label layoutX="341.0" prefHeight="48.0" prefWidth="318.0" text="Баллы социального рейтинга" textAlignment="CENTER">
+                    <font>
+                        <Font name="Lobster Regular" size="25.0" />
+                    </font>
+                </Label>
+            <Label layoutX="67.0" layoutY="48.0" prefHeight="20.0" prefWidth="179.0" text="Постоянная активность">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="StudentKurator" cache="true" layoutX="68.0" layoutY="86.0" mnemonicParsing="false" text="Студент-куратор">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </CheckBox>
+            <CheckBox fx:id="StarostaGroup" layoutX="67.0" layoutY="114.0" mnemonicParsing="false" text="Старосты группы" />
+            <CheckBox fx:id="PresidentCC" layoutX="67.0" layoutY="142.0" mnemonicParsing="false" text="Председатель СС" />
+            <CheckBox fx:id="ZamPresidentCC" layoutX="67.0" layoutY="170.0" mnemonicParsing="false" text="Заместитетль председателя СС" />
+            <CheckBox fx:id="DirectorKomCC" layoutX="67.0" layoutY="197.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="336.0" text="Руководитель комитета, направления, факультета СС; студ. объединений, не входящий в состав СС" wrapText="true" />
+            <CheckBox fx:id="StarostaOfFloor" layoutX="68.0" layoutY="253.0" mnemonicParsing="false" text="Староста этажей в общежитии" />
+            <Label layoutX="67.0" layoutY="288.0" prefHeight="20.0" prefWidth="106.0" text="Волонтерство">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="TimLider" layoutX="67.0" layoutY="321.0" mnemonicParsing="false" text="Тим-лидер" />
+            <CheckBox fx:id="VolonterReu" layoutX="67.0" layoutY="350.0" mnemonicParsing="false" text="Волонтер РЭУ" />
+            <TextField fx:id="ColTimLider" layoutX="191.0" layoutY="316.0" prefHeight="26.0" prefWidth="88.0" promptText="Кол-во часов" />
+            <TextField fx:id="ColVolonterReu" layoutX="191.0" layoutY="345.0" prefHeight="26.0" prefWidth="88.0" promptText="Кол-во часов" />
+            <Label layoutX="68.0" layoutY="388.0" text="Организации мероприятий ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="415.0" prefHeight="18.0" prefWidth="342.0" text="Общеуниверситетские мероприятия, внешние мероприятия:" />
+            <CheckBox fx:id="UniversityChiefOrganizer" layoutX="64.0" layoutY="437.0" mnemonicParsing="false" text="В качестве главного организатора" />
+            <CheckBox fx:id="UniversityZamChiefOrganizer" layoutX="64.0" layoutY="465.0" mnemonicParsing="false" text="В качестве заместителя главного организатора" />
+            <CheckBox fx:id="UniversityCommandChiefOrganizer" layoutX="64.0" layoutY="493.0" mnemonicParsing="false" text="В качестве команды главного организатора" />
+            <Label layoutX="550.0" layoutY="48.0" prefHeight="58.0" prefWidth="432.0" text="Мероприятия комитета, направления, факультета, общежития, спортивного клуба, ДК «Конгресс-центр», научные мероприятия, мероприятия студ. объединений, не входящих в состав студенческого совета:" wrapText="true" />
+            <CheckBox fx:id="CommActivitiesChiefOrganizer" layoutX="550.0" layoutY="110.0" mnemonicParsing="false" text="В качестве главного организатора" />
+            <CheckBox fx:id="CommActivitiesZamChiefOrganizer" layoutX="550.0" layoutY="137.0" mnemonicParsing="false" text="В качестве заместителя главного организатора" />
+            <CheckBox fx:id="CommActivitiesCommandChiefOrganizer" layoutX="550.0" layoutY="164.0" mnemonicParsing="false" text="В качестве команды главного организатора" />
+            <Label layoutX="550.0" layoutY="192.0" text="Студотряды">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="CommanderAndCommissioner" layoutX="550.0" layoutY="219.0" mnemonicParsing="false" text="Командир и комиссар отряда" />
+            <CheckBox fx:id="Fighter" layoutX="550.0" layoutY="247.0" mnemonicParsing="false" text="Боец" />
+            <TextField fx:id="ColFighter" layoutX="615.0" layoutY="242.0" prefHeight="26.0" prefWidth="88.0" promptText="Кол-во часов" />
+            <Label layoutX="550.0" layoutY="280.0" text="Приемная комиссия">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="CentralSectionCommittee" layoutX="550.0" layoutY="308.0" mnemonicParsing="false" text="Центральная приемная комиссия " />
+            <CheckBox fx:id="SelectionCommissions" layoutX="550.0" layoutY="337.0" mnemonicParsing="false" text="Отборочные комиссии факультетов" />
+            <TextField fx:id="ColCentralSectionCommittee" layoutX="801.0" layoutY="303.0" prefHeight="26.0" prefWidth="88.0" promptText="Кол-во дней" />
+            <TextField fx:id="ColSelectionCommissions" layoutX="801.0" layoutY="332.0" prefHeight="26.0" prefWidth="88.0" promptText="Кол-во дней" />
+            <Label fx:id="ColBallsOfSocRating" layoutX="550.0" layoutY="390.0" text="Количество баллов социального рейтинга" />
+            <Button fx:id="ButtonCalc" layoutX="665.0" layoutY="452.0" mnemonicParsing="false" text="Рассчитать" />
+            <Button fx:id="ButtonEnd" layoutX="889.0" layoutY="578.0" mnemonicParsing="false" text="Завершить" />
+            </children></AnchorPane>
+        <Label layoutX="329.0" layoutY="16.0" prefHeight="48.0" prefWidth="342.0" text="Дорожная карта студента" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Lobster Regular" size="28.0" />
+            </font>
+        </Label>
+      <Button fx:id="ButtonBack" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>
